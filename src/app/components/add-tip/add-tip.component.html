@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">
+    添加便签
+  </div>
+  <div class="card-body">
+    <form (submit)="addTip()">
+      <div class="form-group">
+          <label for="text">内容</label>
+          <input type="text" class="form-control" [(ngModel)]="text" name="text">
+        </div>
+
+        <input type="submit" value="提交" class="btn btn-primary">
+    </form>
+  </div>
+</div>

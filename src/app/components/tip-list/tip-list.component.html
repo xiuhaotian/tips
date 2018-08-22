@@ -1,0 +1,9 @@
+<app-add-tip (tipAdded)="addTip($event)"></app-add-tip>
+
+<!-- 组件嵌套 -->
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <app-tip *ngFor="let tip of tips" [tip]="tip">
+    </app-tip>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="card mb-4 box-shadow">
+  <div class="card-header">
+    <h4 class="my-0 font-weight-normal">{{ tip.time }}</h4>
+  </div>
+  <div class="card-body">
+    <ul class="list-unstyled mt-3 mb-4">
+      <li>{{tip.text}}</li>
+    </ul>
+    <button type="button" (click)="removeTip(tip)" class="btn btn-outline-danger">销毁</button>
+  </div>
+</div>

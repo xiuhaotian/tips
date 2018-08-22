@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
+import { TipComponent } from './components/tip/tip.component';
+import { AddTipComponent } from './components/add-tip/add-tip.component';
+import { TipListComponent } from './components/tip-list/tip-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    TipComponent,
+    AddTipComponent,
+    TipListComponent
   ],
   imports: [
     BrowserModule,
