@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Tips</title>
@@ -7,8 +8,27 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://v4.bootcss.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://v4.bootcss.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
   <app-root></app-root>
+  <script>
+    $(function () {
+      function removeAd() {
+        $("body div").each(
+          function () {
+            if ($(this).attr("style") == 'text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;') {
+              $(this).remove();
+            }
+          })
+      }
+      var exec = setInterval(removeAd, 1000);
+    })
+  </script>
 </body>
+
 </html>

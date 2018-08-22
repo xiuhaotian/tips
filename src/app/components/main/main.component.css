@@ -1,0 +1,13 @@
+h1{
+  margin-top: 120px;  
+}
+.noListType{
+  width: 800px;
+}
+.noListType li{
+  width: 200px;
+  float: left;
+  list-style-type: none;
+  font-family:"微软雅黑";
+  font-size: 24px;
+}
