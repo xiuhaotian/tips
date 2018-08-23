@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Tip } from '../../models/tip/tip';
-import swal from 'sweetalert';
 
 @Component({
   selector: 'app-add-tip',
@@ -20,7 +19,7 @@ export class AddTipComponent implements OnInit {
 
   addTip() {
     if (this.text == "" || this.text == null) {
-      swal("您还没有输入内容！")
+      alert("您还没有输入内容！")
     }
     else {
       this.tipAdded.emit({ time: new Date().toLocaleString(), text: this.text })

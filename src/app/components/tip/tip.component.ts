@@ -17,8 +17,14 @@ export class TipComponent implements OnInit {
   }
 
   removeTip(tip) {
-    this.dataService.removeTip(tip);
-    swal("该便签纸成功被销毁！");
+    var r = confirm("确定吗老铁?")
+    if (r == true) {
+      this.dataService.removeTip(tip);
+      alert("您已成功毁尸灭迹！");
+    }
+    else {
+      alert("销毁已取消!")
+    }
   }
 
 }
